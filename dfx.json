@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "canisters": {
+    "avai_project_backend": {
+      "type": "motoko",
+      "main": "src/avai_project_backend/main_fixed.mo",
+      "metadata": [
+        {
+          "name": "candid:service"
+        }
+      ]
+    },
+    "avai_audit_engine": {
+      "type": "motoko",
+      "main": "src/avai_audit_engine/main.mo",
+      "metadata": [
+        {
+          "name": "candid:service"
+        }
+      ]
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943",
+      "type": "ephemeral"
+    },
+    "mainnet": {
+      "providers": ["https://ic0.app"],
+      "type": "persistent"
+    },
+    "testnet": {
+      "providers": ["https://testnet.dfinity.network"],
+      "type": "persistent"
+    }
+  },
+  "dfx": "0.22.0"
+}
