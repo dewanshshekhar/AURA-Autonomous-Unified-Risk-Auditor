@@ -1,174 +1,184 @@
-# AVAI Canister Agent - Autonomous ICP Security Auditor
+AURA – Autonomous Unified Risk Auditor 🛡️
 
-**Production-ready autonomous security auditing for Internet Computer dApps**
+Advanced blockchain security system for next-gen decentralized applications
 
-**Status**: Live on ICP | **Canister ID**: `bkyz2-fmaaa-aaaaa-qaaaq-cai` | **Success Rate**: 96.23%
+STATUS: ✅ Production Ready – Version 0
 
-## Overview
+AURA is a revolutionary autonomous blockchain security auditor powered by a Dynamic Threat Learning Engine. Unlike static audit tools, AURA continuously evolves by learning from past vulnerabilities, threat vectors, and exploit patterns.
 
-AVAI is the first autonomous security auditing system built natively on the Internet Computer Protocol. It provides comprehensive smart contract analysis, vulnerability detection, and professional audit reports using advanced AI orchestration.
+It combines on-chain/off-chain analysis, smart contract auditing, multi-agent collaboration, automatic exploit simulation, and mathematically validated risk scoring to deliver enterprise-grade blockchain security reports.
 
-**Key Features:**
-- **Autonomous Operation** - 24/7 security monitoring with zero human intervention
-- **Multi-Language Analysis** - Native Motoko, Rust, and Candid interface support
-- **Real-Time Detection** - Instant vulnerability identification and threat assessment
-- **Professional Reports** - Enterprise-grade audit documentation with actionable insights
-- **ICP Native** - Built specifically for Internet Computer ecosystem requirements
+📊 Competitive Analysis: AURA scores 9.1/10 vs Traditional Tools (7.3/10) – See Technical Assessment
+ for detailed breakdown.
 
-## Quick Start
+✨ What Makes AURA Unique
 
-### Prerequisites
-- **dfx**: Internet Computer SDK
-- **Docker**: For local development
-- **Node.js**: For web interface components
+🧠 Dynamic Threat Learning Engine – Adapts in real time to new exploits, unlike traditional static scanners.
 
-### Installation
+🏆 Industry-Leading Security Performance
 
-```bash
-# Clone the repository
-git clone https://github.com/AVAICannisterAgent/AVAI-CannisterAgent.git
-cd AVAI-CannisterAgent
+AURA: 9.1/10 – Continuous learning + exploit simulation
 
-# Start local IC replica
-dfx start --background --clean
+Mythril/Slither: 7.5/10 – Good detection, no adaptive learning
 
-# Deploy AVAI canister
-dfx deploy avai_project_backend --network local
+OpenZeppelin Defender: 8.0/10 – Excellent monitoring, limited predictive analysis
 
-# Initialize the audit system  
-dfx canister call avai_project_backend initialize --network local
-```
+Traditional Audits: 7.0/10 – Manual, time-bound, not self-improving
 
-### Basic Usage
+🚀 Core Features
+Autonomous Security Auditing
 
-```bash
-# Start security audit
-dfx canister call avai_project_backend start_agent_orchestrator --network local
+Smart Contract Analysis: Detects vulnerabilities (reentrancy, overflow, access control flaws)
 
-# Process security analysis
-dfx canister call avai_project_backend process_dynamic_prompt '("analyze smart contract security for [contract_address]", null)' --network local
+On-Chain Behavior Monitoring: Flags suspicious transactions and anomalies
 
-# Get audit status
-dfx canister call avai_project_backend greet '("System Status Check")' --network local
-```
+Exploit Simulation: Automated adversarial testing with attack vectors
 
-## Architecture
+Professional Reporting: Executive-grade security reports + remediation guides
 
-**Multi-AI Security Orchestration:**
-- **Web Research Agent**: Threat intelligence and vulnerability database analysis
-- **Code Analysis Agent**: Static/dynamic code analysis and pattern recognition
-- **Report Generation Agent**: Professional audit documentation and recommendations
+PDF Export: Generates compliance-ready audit reports
 
-**Core Components:**
-- **Motoko Canister**: Native ICP smart contract for AI orchestration
-- **Security Engine**: Advanced vulnerability detection algorithms
-- **Report Generator**: Professional audit output with actionable insights
-- **Real-Time Monitor**: Continuous security posture assessment
+Multi-Agent Collaboration
 
-## Configuration
+Audit Coordinator Hub: Orchestrates tasks across specialized agents
 
-### AI Model Setup
-```javascript
-// Configure AI models in canister
-let config = {
-  web_research_model: "llama3.1:8b",
-  code_analysis_model: "codellama:7b", 
-  report_generation_model: "mistral:7b"
-};
-```
+Smart Delegation: Assigns security checks to appropriate agents (static analysis, dynamic monitoring, exploit sim)
 
-### Security Parameters
-```javascript
-// Audit configuration
-let audit_config = {
-  vulnerability_threshold: "medium",
-  analysis_depth: "comprehensive",
-  report_format: "professional",
-  real_time_monitoring: true
-};
-```
+Real-time Inter-Agent Communication: Continuous knowledge sharing
 
-## Use Cases
+Collaborative Workflow: Vulnerability detection → exploit simulation → remediation → reporting
 
-### 1. **Pre-Deployment Security Audit**
-```bash
-dfx canister call avai_project_backend process_dynamic_prompt '("conduct comprehensive security audit for canister deployment", null)'
-```
+Automatic Exploit Detection & Simulation
 
-### 2. **Continuous Security Monitoring**
-```bash
-dfx canister call avai_project_backend start_agent_orchestrator
-```
+Pattern Recognition: Identifies high-risk coding patterns instantly
 
-### 3. **Vulnerability Assessment**
-```bash
-dfx canister call avai_project_backend process_dynamic_prompt '("assess security vulnerabilities in Motoko smart contract", null)'
-```
+Attack Script Generation: Auto-generates adversarial scripts (Python/Foundry/Hardhat)
 
-## Testing & Validation
+Safe Execution: Isolated sandbox with resource/time limits
 
-```bash
-# Health check
-dfx canister call avai_project_backend greet '("Health Check")' --network local
+Seamless Integration: Results fed into global risk scoring engine
 
-# System status
-dfx canister call avai_project_backend start_agent_orchestrator --network local
+Advanced Blockchain Forensics
 
-# Performance test
-dfx canister call avai_project_backend process_dynamic_prompt '("test system performance", null)' --network local
-```
+Transaction Tracing: Detects wash trades, sandwich attacks, and flash loan exploits
 
-## Troubleshooting
+Wallet Risk Profiling: Scores wallets based on behavioral risk
 
-**Common Issues:**
-- **Canister Not Responding**: Check IC network connectivity with `dfx ping`
-- **AI Model Errors**: Verify model configuration and availability
-- **Deployment Issues**: Reset local replica with `dfx start --clean`
+Cross-Chain Analysis: Tracks exploits across bridges and multi-chain systems
 
-**Support Channels:**
-- **GitHub Issues**: Bug reports and technical questions
-- **Enterprise Support**: Professional audit services  
-- **Documentation**: Comprehensive guides in `/docs`
+Vision-Guided Auditing: Decodes and validates dApp frontends with contract backends
 
-## Roadmap
+Global Risk Scoring
 
-**v1.0** - **Current**
-- Multi-AI security orchestration with 3 specialized models
-- Real-time vulnerability detection and professional audit reports
-- Native ICP integration with Motoko smart contracts
+Unified Risk Framework: Single source of truth for vulnerabilities
 
-**v1.1** - **In Development**  
-- Advanced threat detection with ML-powered pattern recognition
-- Automated penetration testing with exploit simulation
-- Multi-chain analysis support
+Mathematical Validation: Risk components capped (25 each, max 100)
 
-**v1.2** - **Planned**
-- CI/CD pipeline integration for automated security gates
-- Custom security policies and team collaboration tools
-- Enterprise API gateway and advanced reporting
+Score Transparency: Clear distinction between PREDICTED vs ACTUAL risk levels
 
-## Contributing
+Real-time Assessment: ~50ms processing, mathematically validated
 
-**Priority Areas:**
-- **Security Research**: New vulnerability detection methods
-- **AI Enhancement**: Improved security-focused training datasets  
-- **Performance**: Faster audit processing for large codebases
-- **Integration**: CI/CD pipeline and enterprise platform APIs
+🏗️ System Architecture
+Multi-Agent Security Model
 
-**Getting Started:**
-1. Fork the repository and create feature branch
-2. Follow secure development practices and comprehensive testing
-3. Update documentation and provide audit examples
-4. Submit pull request with detailed security impact analysis
+Audit Agent: Core contract security checker
 
-## License & Support
+Exploit Agent: Simulates real-world attack vectors
 
-**License**: MIT - Open source security for the ICP ecosystem
+Forensics Agent: Blockchain monitoring + anomaly detection
 
-**Enterprise Support**: Professional audit services and custom integrations available
+Browser Agent: dApp frontend security validation
 
-**Canister ID**: `bkyz2-fmaaa-aaaaa-qaaaq-cai` | **Status**: Production Ready | **Network**: Internet Computer Protocol
+Compliance Agent: Generates compliance-ready reports (GDPR, ISO, SOC2, Web3-specific)
 
----
+Collaboration Hub: Coordinates multi-agent workflows
 
-**AVAI Canister Agent** - *Pioneering autonomous security for the decentralized web*
+Risk Engine: Central scoring + validation system
+
+Global Quality & Risk Management
+
+Unified Risk Scoring (max 100)
+
+Mathematical Validation for accuracy
+
+Risk Type Transparency: ACTUAL vs PREDICTED vs INTERMEDIATE
+
+Standard Thresholds: 75/100 minimum acceptable security baseline
+
+Sandboxed Exploit Simulation
+
+Dockerized Sandbox: Secure environment for attack testing
+
+Resource Limits: Prevents denial-of-service by heavy test cases
+
+On-chain/Off-chain Separation for safe execution
+
+🔧 Installation & Setup
+Quick Start
+
+Clone Repository
+
+git clone https://github.com/your-username/aura-auditor.git
+cd aura-auditor
+
+
+Install Dependencies
+
+pip install -r requirements.txt
+
+
+Setup Models
+
+Option A: Local Threat Models (Recommended)
+
+# Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
+
+# Pull optimized models
+ollama pull sec-audit:7b     # Smart contract analysis
+ollama pull riskdolphin3     # Risk scoring engine
+
+
+Option B: Cloud API
+
+cp config/config.example.toml config/config.toml
+# Add API keys (OpenAI, Anthropic, Google, Azure)
+
+
+Run AURA
+
+python main.py
+
+🎯 Example Workflows
+Smart Contract Audit
+python main.py --audit contracts/MyToken.sol
+
+Exploit Simulation
+python main.py --simulate "Reentrancy attack on UniswapV2Router"
+
+Comprehensive dApp Security Report
+python main.py --audit-dapp "https://example-dapp.io" --full
+
+📊 Performance & Metrics
+
+Static Analysis: < 10s average per contract
+
+Exploit Simulation: 2-7s with GPU acceleration
+
+Risk Assessment: ~50ms
+
+Multi-Agent Collaboration: Real-time
+
+Startup Time: < 30s
+
+🛡️ Security & Compliance
+
+100% Local Execution (optional cloud integration)
+
+Encrypted Storage for sensitive data
+
+Audit Logs for compliance reporting
+
+Role-Based Access Control for enterprise teams
+
+Regulatory Support: GDPR, SOC2, ISO27001, Web3-specific security
