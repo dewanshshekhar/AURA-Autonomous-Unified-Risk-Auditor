@@ -175,7 +175,7 @@ class CanisterReportGenerator:
             ])
         else:
             report_sections.extend([
-                f"**IC Project Status:** ⚠️ Analysis incomplete",
+                f"**IC Project Status:** Analysis incomplete",
                 f""
             ])
         
