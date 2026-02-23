@@ -4,7 +4,6 @@ Browser navigation utilities for Internet Computer canister repository analysis.
 Handles GitHub repository navigation, file discovery, and content extraction
 using centralized browser safety to prevent conflicts.
 """
-
 import asyncio
 import re
 from typing import Dict, List, Optional, Any
