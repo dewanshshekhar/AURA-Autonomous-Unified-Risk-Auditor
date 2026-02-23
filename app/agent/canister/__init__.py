@@ -1,9 +1,3 @@
-"""
-Canister Agent Module - Modular Internet Computer canister analysis system.
-
-This module provides specialized agents and utilities for analyzing Internet Computer (IC) 
-canister projects, including security auditing, code analysis, and deployment validation.
-"""
 
 from .core_agent import CanisterAgent
 from .browser_navigator import CanisterBrowserNavigator
