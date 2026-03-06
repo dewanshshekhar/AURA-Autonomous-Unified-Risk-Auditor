@@ -138,7 +138,8 @@ actor AVAIAuditEngine {
       };
     }
   };
-  
+
+
   // Orchestrate all audit phases
   private func orchestrateAuditPhases(auditId: Text) : async Result.Result<Text, Text> {
     switch (auditRegistry.get(auditId)) {
@@ -179,7 +180,8 @@ actor AVAIAuditEngine {
             auditRegistry.put(auditId, updatedSession);
           };
         };
-        
+
+
         // Phase 3: Security Scanning & Threat Assessment
         let currentSession2 = switch (auditRegistry.get(auditId)) {
           case null { return #err("Session lost") };
