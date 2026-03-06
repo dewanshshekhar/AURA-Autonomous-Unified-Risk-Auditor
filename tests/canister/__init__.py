@@ -1,6 +1,4 @@
-"""
-Canister Test Suite
-"""
+
 
 from .test_canister_integration import TestCanisterIntegration
 
