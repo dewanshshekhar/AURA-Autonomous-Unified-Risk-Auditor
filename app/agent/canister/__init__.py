@@ -18,6 +18,6 @@ __all__ = [
     'CanisterConfig'
 ]
 
-__version__ = "2.0.0"
+__version__ = "2.0.0" 
 __author__ = "AVAI Development Team"
 __description__ = "Modular Internet Computer canister analysis framework"
