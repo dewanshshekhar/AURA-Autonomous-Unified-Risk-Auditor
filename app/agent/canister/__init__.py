@@ -7,6 +7,7 @@ from .report_generator import CanisterReportGenerator
 from .security_analyzer import CanisterSecurityAnalyzer
 from .config import CanisterConfig
 
+
 __all__ = [
     'CanisterAgent',
     'CanisterBrowserNavigator', 
